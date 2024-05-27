@@ -1,0 +1,11 @@
+body {
+	background-image: url("../img/sfondoBN.jpeg");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Dubai, Arial;
+}
+
+a{
+    color : black;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="../css/stileDatiInput.css" title="Stile standard">
+        <link rel="stylesheet" href="../css/stileDatiInputIpovedenti.css" title="Stile per ipovedenti">
+        <title>Pagina di registrazione</title>
+        <link rel="icon" type="image/x-icon" href="../img/logo.jpeg">
+    </head>
+    <body>
+        <!--Con il seguente comando l'utente può accedere alla pagina di output se ha inserito tutti i dati-->
+        <form method="post" action="datiOutput.html">
+            <h1 style="text-align:center;">REGISTRATI</h1><br>
+            <center><h3>Per registrarti inserisci i seguenti dati anagrafici</h3><br></center>
+            <br>
+            <fieldset>
+            
+                <legend>DATI IDENTIFICATIVI:</legend>
+
+                    <!-- NOME --------------------------------------> 
+                    Nome:<br> 
+                    <input type="text" name="nome" required><br><br> 
+
+                    <!-- COGNOME -----------------------------------> 
+                    Cognome:<br> 
+                    <input type="text" lastname="cognome" required><br><br>
+
+                    <!-- DATA DI NASCITA --------------------------->
+                    <label for="birthday">Data di nascita:</label>
+                    <input type="date" id="birthday" name="birthday" required><br><br>
+
+                    <!-- SESSO ------------------------------------->
+                    Sesso:<br> 
+                    <input type="radio" name="sesso" value="M"> M<br> 
+                    <input type="radio" name="sesso" value="F"> F<br><br>
+
+                    <!-- CODICE FISCALE ---------------------------->
+                    Codice fiscale:<br> 
+                    <input type="text" name="codice fiscale" required><br><br>
+
+                    <!-- RESIDENZA ---------------------------------> 
+                    Residenza:<br>
+                    <select name="residenza" required> 
+                    <option value="Potenza">Provincia di Potenza</option> 
+                    <option value="Matera">Provincia di Matera</option>
+                    </select><br><br> 
+
+            </fieldset>
+            <br><br>
+
+
+            <br>
+                <legend>DATI DI CONTATTO:</legend>
+                <fieldset>
+                    <!-- INDIRIZZO ---------------------------------->
+                    Indirizzo:<br> 
+                    <input type="text" name="indirizzo" required><br><br>
+
+                    <!-- NUMERO DI TELEFONO ------------------------->
+                    <label for="phone">Numero di telefono: </label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+39 012-345-6789" required><br>
+                    <small>Formato: 012-345-6789</small><br><br>
+
+                    <!-- EMAIL ------------------------------------->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="nomeCognome@gmail.com" required><br><br>
+                </fieldset>
+            <br><br>
+
+            <!-- COMMENTO ------------------------------------------> 
+            Commento<br> 
+            <textarea name="commento" rows="5" cols="30"></textarea> 
+            <br><br>
+            <!-- BOTTONI ------------------------------------------->
+            <input type="submit" value="Invia i dati">
+            <!--<input type="button" onclick="alert('I dati sono stati inviati con successo!')" value="Invia i dati">-->
+            <input type="reset" value="Reset"><br><br>
+            <a href="../index.html">HOME</a>
+        </form> 
+    </body>
+</html>

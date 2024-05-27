@@ -1,0 +1,46 @@
+body {
+    background-image: url("../img/imgOutput.jpeg");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Dubai, Arial;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    flex-direction: column; 
+    text-align: center; 
+}
+
+            
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+                
+th, td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+
+th{
+    background-color: #f2f2f2;
+}
+
+h2 {
+    margin-bottom: 20px; 
+}
+
+a {
+    margin-top: 20px; 
+    color: white;
+}
+

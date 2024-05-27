@@ -1,0 +1,16 @@
+body {
+    background-image: url("../img/imgInput.jpeg");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Dubai, Arial;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
